@@ -23,5 +23,5 @@ if flag == False:
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
 # print this out in the format £X.XX (to two decimal places).
         interest = 1.008 * year
-        rounded_interest = round(interest,2)
+        rounded_interest = f"{interest:.2f}"
         print(f"With interest you will save, £{rounded_interest} a year")
