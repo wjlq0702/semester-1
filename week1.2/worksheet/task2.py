@@ -4,6 +4,7 @@ import sys
 numbers = read_numbers()
 if numbers == []:
     sys.exit("Error: no numbers provided")
+
 print("Minimum = ", min(numbers))
 print("Maximum = ", max(numbers))
 print("Mean = ", (sum(numbers)/len(numbers)))
