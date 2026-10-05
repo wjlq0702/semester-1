@@ -6,7 +6,7 @@ if numbers == []:
     sys.exit("Error: no numbers provided")
 
 print(f"Minimum = {min(numbers)}")
-print(f"Maximum =  {max(numbers)}")
+print(f"Maximum = {max(numbers)}")
 print(f"Mean = {(sum(numbers)/len(numbers))}")
 if (len(numbers)%2) ==0:
     index = ((len(numbers)//2) - 1)
