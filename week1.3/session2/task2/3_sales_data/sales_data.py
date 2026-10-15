@@ -8,13 +8,15 @@
 #   - average sale amount
 #   - the widget which has been sold the most
 # and print these out in a nice, human-readable format
+with open ("sales.csv", "r") as infile:
 
 
 # additional: you can calculate other sales statistics such as:
 # - total sales for each region
 # - most sold widget for each region
 # - total sales for each widget
-
+    for x in infile:
+        print(x)
 
 # Hints:
 # - Remember to handle file errors
