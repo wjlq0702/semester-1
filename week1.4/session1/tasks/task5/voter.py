@@ -19,3 +19,6 @@ age = int(input("Enter your age: "))
 check_vote_eligibility(age)
 
 # what is the return value from check_vote_eligibility?
+#The return value from check vot eligiibility is to decicde wether the person is old enough to vote or not.
+#If the user is older than 18 the value being returned will include "You are eligiblie to vote"
+#If the user is less than 17, the message that is returned will include You are not eligible to vote.

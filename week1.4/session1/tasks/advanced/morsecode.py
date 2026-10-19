@@ -17,6 +17,8 @@ def string_to_morse_code(string):
     """
     Returns the Morse code of the string.
     """
+    string = string.upper()
+    view = ""
 
     mcode = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.',
              'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---',
@@ -30,6 +32,10 @@ def string_to_morse_code(string):
              ':': '---...', ',': '--..--', '=': '-...-',  '!': '-.-.--',
              '.': '.-.-.-', '-': '-....-', '+': '.-.-.',  '"': '.-..-.',
              '?': '..--..', '/': '-..-.'}
+    for x in string:
+        morse = mcode.get(x)
+        view += str(x) 
+    return view
 
 
 # test data
