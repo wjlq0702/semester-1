@@ -13,3 +13,9 @@
 
 # Optional: extend this by using a loop to allow multiple people to enter their info in a row
 # If you want multiple people to add info without overwriting, consider append mode 'a'
+
+name = input("Enter user name:")
+age = input("Enter user age:")
+age = input("Enter user favourite colour")
+with open ("user_info.txt", "x") as file:
+    
