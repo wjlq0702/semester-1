@@ -19,12 +19,19 @@ print(calendar.month(2025, 10))
 # output.
 
 
+
 # While at https://docs.python.org/3/library/calendar.html, explore
 # the calendar function(calendar.calendar, yes the function is called
 # calendar). The calendar function returns a 3-column calendar for an entire
 # year as a multi-line string. For example print(calendar.calendar(2025))
 # will print the calendar for 2025.
 
+
 # Your task is to write code to make 3 functions calls to the calendar
 # function with different values to the optional arguments (w, l, c, and m).
 # Display the output to observe the differences.
+print(calendar.calendar(2026, w=0,l=0,c=5, m=2 ))
+#w is used for the minimum width of each date number in characters
+#l is used to make the calendar taller making a week take up as many lines as given 
+#c is the spacing between the months
+#]m is the months per row

@@ -4,12 +4,15 @@
 # year, separator. The separator is an optional argument with a default
 # value to be "-". The function returns the formatted date as a string
 # in the format day-month-year with the default separator.
+x = input("Enter a day:")
+y = input("Enter a month:")
+z = input("Enter a year:")
 
-
-def format_data(day, month, year, separator):
+def format_data (day, month, year, separator="-"):
     # complete your code here
-
+    formatted_date = (f"{day}{separator}{month}{separator}{year}")
     return formatted_date
 
+print(format_data(x,y,z))
 
 # Write code to test the function with separators such as "/", ":", "."
