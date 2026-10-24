@@ -15,7 +15,15 @@ def most_frequent_string(votes):
         - tuple: (str, int) where str is the string with the highest count,
         and int is the count of its occurences
         - None, None: if votes is empty.
+    
     """
+    if not votes:
+        return None,None
+    else:
+        highest_number = max(votes.count(y) for y in set(votes))
+        highest_name = [(x,highest_number) for x in set(votes) if votes.count(x) == highest_number]
+        return tuple(highest_name)
+
 
     # Your task is to complete the body of the function based on the details in the docstring.
     # Hint 1: You can complete this task with for loops or comprehensions 
@@ -30,6 +38,7 @@ names = ['Jesy', 'Leigh-Anne', 'Perrie', 'Leigh-Anne', 'Jade',
          'Leigh-Anne', 'Jade', 'Jesy', 'Jade', 'Perrie', 'Jade',
          'Jade', 'Jesy', 'Perrie', 'Perrie', 'Jade', 'Leigh-Anne',
          'Jesy', 'Jesy', 'Perrie', 'Jesy']
+
 
 
 # Check if correct output is produced
