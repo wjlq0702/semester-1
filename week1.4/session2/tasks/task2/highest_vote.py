@@ -22,7 +22,7 @@ def most_frequent_string(votes):
     else:
         highest_number = max(votes.count(y) for y in set(votes))
         highest_name = [(x,highest_number) for x in set(votes) if votes.count(x) == highest_number]
-        return tuple(highest_name)
+        return highest_name
 
 
     # Your task is to complete the body of the function based on the details in the docstring.

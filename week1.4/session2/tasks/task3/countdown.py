@@ -16,14 +16,23 @@ def countdown(n):
 
     # Complete your code here
     # base case
-
+    if n == 0:
+        print(0)
+        return
     # recursive case
 
+    print(n)
+    countdown((n-1))
 
 # check if correct output is produced
-countdown(30)    # 30 ... 0 (Note: each number is printed in a separate line)
+print(countdown(30))    # 30 ... 0 (Note: each number is printed in a separate line)
 countdown(5)     # 5 ... 0  (Note: each number in printed in a separate line)
 
 
 # Once you have completed, your next task is to write an equivalent function that
 # uses a loop.
+n = int(input("How many times do you want to run the loop:"))
+print(n)
+for x in range (n): 
+    print(n-1)
+    n = n-1
