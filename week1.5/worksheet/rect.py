@@ -13,7 +13,7 @@ class Rectangle:
         self.width = width
         self.height = height
 
-        if type(width) != int or type(height)!=int:
+        if type(self.width) != int or type(self.height)!=int:
             raise TypeError
         elif width <=0 or height <=0:
             raise ValueError
