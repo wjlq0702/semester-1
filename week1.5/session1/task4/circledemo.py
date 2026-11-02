@@ -6,12 +6,13 @@
 from geometry import Point
 from geometry import Circle
 
-p= Point(1.5,2.5)
-c = Circle(p,15)
+point= Point(1.5,2.5)
+c = Circle(15,point)
 
 print(c.area())
 print(c.perimeter())
-
+if point in c:
+    print("Point is within circle")
 # Write a program here that
 #  - Creates a Point object, to represent the centre of a circle
 #  - Creates a Circle object, using the Point object and a value for radius

@@ -39,7 +39,7 @@ class Circle:
         This class aims to find areas and perimeters using a 
         given point of the centre or radius
     """
-    def __init__(self, centre, radius):
+    def __init__(self, radius,centre=Point(0,0) ):
         self.centre = centre
         self.radius = radius
 
@@ -49,5 +49,10 @@ class Circle:
     def perimeter(self):
         return math.pi * (2*self.radius)
 
+    
+        
+        
+
+    
 
 # Don't add any testing code to this file!
