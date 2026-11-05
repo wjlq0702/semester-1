@@ -15,3 +15,6 @@ class Quake:
     latitude: float
     depth: float
     magnitude: float
+
+
+
