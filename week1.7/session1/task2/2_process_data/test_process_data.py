@@ -21,8 +21,8 @@ def test_empty_list():
 def test_one_int_list():
     # complete the implementation for 
     # testing a list with a single integer
-    x = [5]
-    assert process_data(x)  == x
+    x = 5
+    assert process_data([x])  == x
 
 def test_multiple_int_list():
     # complete the implementation for
