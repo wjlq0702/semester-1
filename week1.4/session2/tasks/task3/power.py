@@ -6,6 +6,9 @@
 
 def power(x, n):
     # complete your code here
+    """
+    Fn recursively calls the same value to calculate the power
+    """
     # base case
     if n == 0:
         return 1

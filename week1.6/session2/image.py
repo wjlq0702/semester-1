@@ -306,4 +306,33 @@ class ImageListofLists:
             for value in self.pixels[row]:
                 print(f"{value:4d}", end="", file=imgfile)
             print(file=imgfile)   
-        
+
+
+class ColourImage(Image):
+    """Colour image using PPM format (P3)."""
+
+    magic_number = "P3"
+    components = 3
+
+    def create_pixels(self, width, height, value=(0, 0, 0), maximum=255):
+
+        if width < 1:
+            raise ImageError("width cannot be < 1")
+
+        if height < 1:
+            raise ImageError("height cannot be < 1")
+
+        if maximum < 1:
+            raise ImageError("maximum must be positive")
+
+        if not isinstance(value, (tuple, list)) or len(value) != 3:
+            raise ImageError("colour must contain three components")
+
+        if any(not isinstance(v, int) or v < 0 or v > maximum
+               for v in value):
+            raise ImageError("invalid colour component")
+
+        self.width = width
+        self.height = height
+        self.max_value = maximum
+        self.pixels = [tuple(value)] * (width * height

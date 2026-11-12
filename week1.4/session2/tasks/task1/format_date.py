@@ -9,6 +9,9 @@ y = input("Enter a month:")
 z = input("Enter a year:")
 
 def format_data (day, month, year, separator="-"):
+    """
+    Fn used to sepeartae day, month,year between the default assigned separator
+    """
     # complete your code here
     formatted_date = (f"{day}{separator}{month}{separator}{year}")
     return formatted_date
