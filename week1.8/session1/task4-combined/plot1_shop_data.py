@@ -46,6 +46,8 @@ plt.show()
 
 # We can do the same to sort by category - this time, we can make a bar chart:
 
+
+
 sales_per_category = shop_data.groupby("Category").sum(numeric_only=True)
 sales_per_category = sales_per_category["Total_Price"]
 

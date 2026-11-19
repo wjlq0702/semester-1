@@ -41,11 +41,16 @@ df = pd.DataFrame(temp_data)
 
 df.plot()
 
-plt.show()
-
 # annotate the graph with axis labels
-
+plt.xlabel('Date')
+plt.ylabel('Temperature (C)')
 # note that temperature is in Farenheit (F)
 # convert to Celcius before plotting 
+df['tempmax'] = (df['tempmax'] - 32) * 5/9
+
+df['tempmin'] = (df['tempmin'] - 32) * 5/9
+
+df['temp'] = (df['temp'] - 32) * 5/9
 
 # using the documentation explore other data, eg. rainfall  
+plt.show()
